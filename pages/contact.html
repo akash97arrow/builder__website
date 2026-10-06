@@ -91,7 +91,7 @@
 								type="text"
 								required
 								placeholder="Your name"
-								pattern="[A-Za-z ]{2,50}"
+								pattern="[A-Za-z]+(?:[ ][A-Za-z]+)*"
 								maxlength="50"
 								title="name should contains only letters and spaces"
 							/>
@@ -103,15 +103,23 @@
 								name="phone"
 								type="tel"
 								required
-								pattern="(?:[0-9]| |\\+|\\(|\\)|-){10,15}"
-								maxlength="15"
+								pattern="[0-9]{10}"
+								maxlength="10"
 								placeholder="Your phone number"
 								title="please enter a valid phone number"
 							/>
 						</div>
 						<div class="field">
 							<label for="email">Email</label
-							><input id="email" name="email" type="email" required placeholder="Your email" maxlength="100" />
+							><input
+								id="email"
+								name="email"
+								type="email"
+								required
+								placeholder="Your email"
+								maxlength="100"
+								autocomplete="email"
+							/>
 						</div>
 						<div class="field">
 							<label for="interest">Interested Project</label
@@ -129,6 +137,8 @@
 								id="message"
 								name="message"
 								required
+								minlength="4"
+								maxlength="600"
 								placeholder="Tell us your preferred location, BHK or budget range"
 							></textarea>
 						</div>
