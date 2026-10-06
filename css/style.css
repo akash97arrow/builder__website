@@ -2,7 +2,7 @@
 	--ink: #26332b;
 	--green: #526451;
 	--deep: #314538;
-	--gold: #80602f;
+	--gold: #b38a52;
 	--cream: #f7f4ec;
 	--paper: #fffdf8;
 	--muted: #6f776f;
@@ -701,4 +701,222 @@ p {
 	z-index: 999;
 	background: #fff;
 	padding: 10px;
+}
+
+/* ---------- Content extensions: steps, checklists, FAQ, tables ---------- */
+.steps {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 18px;
+}
+
+.step {
+	background: var(--paper);
+	border: 1px solid var(--line);
+	border-radius: 10px;
+	padding: 26px 24px;
+	transition: 0.3s;
+}
+
+.step:hover {
+	transform: translateY(-5px);
+	box-shadow: var(--shadow);
+}
+
+.step-num {
+	font: 600 34px/1 'Playfair Display', serif;
+	color: var(--gold);
+	margin-bottom: 16px;
+}
+
+.step h3 {
+	font-size: 19px;
+}
+
+.step p {
+	font-size: 12px;
+	color: var(--muted);
+	margin-top: 9px;
+}
+
+.checklist {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 0;
+	display: grid;
+	gap: 11px;
+}
+
+.checklist li {
+	position: relative;
+	padding-left: 30px;
+	font-size: 13px;
+	color: var(--muted);
+}
+
+.checklist li:before {
+	content: '✓';
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	background: #edf0e9;
+	color: var(--green);
+	font-size: 11px;
+	font-weight: 700;
+	display: grid;
+	place-items: center;
+}
+
+.card .checklist,
+.feature .checklist,
+.floor-body .checklist {
+	margin-top: 14px;
+	gap: 8px;
+}
+
+.card .checklist li,
+.feature .checklist li,
+.floor-body .checklist li {
+	font-size: 12px;
+}
+
+.side-layout {
+	display: grid;
+	grid-template-columns: 0.8fr 1.2fr;
+	gap: 56px;
+	align-items: start;
+}
+
+.side-layout > div:first-child .lead {
+	margin-top: 16px;
+}
+
+.faq {
+	display: grid;
+	gap: 12px;
+}
+
+.faq-item {
+	background: var(--paper);
+	border: 1px solid var(--line);
+	border-radius: 10px;
+	overflow: hidden;
+	transition: 0.3s;
+}
+
+.faq-item[open] {
+	box-shadow: var(--shadow);
+	border-color: #c9cfc5;
+}
+
+.faq-item summary {
+	cursor: pointer;
+	list-style: none;
+	padding: 18px 54px 18px 22px;
+	font-weight: 700;
+	font-size: 13px;
+	color: var(--deep);
+	position: relative;
+}
+
+.faq-item summary::-webkit-details-marker {
+	display: none;
+}
+
+.faq-item summary:after {
+	content: '+';
+	position: absolute;
+	right: 22px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 22px;
+	font-weight: 400;
+	color: var(--gold);
+}
+
+.faq-item[open] summary:after {
+	content: '–';
+}
+
+.faq-item p {
+	padding: 0 22px 20px;
+	font-size: 12px;
+	color: var(--muted);
+}
+
+.table-wrap {
+	overflow-x: auto;
+	border: 1px solid var(--line);
+	border-radius: 10px;
+	background: var(--paper);
+}
+
+.data-table {
+	width: 100%;
+	min-width: 640px;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+.data-table th,
+.data-table td {
+	padding: 16px 20px;
+	text-align: left;
+	border-bottom: 1px solid var(--line);
+}
+
+.data-table th {
+	font-size: 9px;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	color: var(--gold);
+	background: #f7f5ee;
+}
+
+.data-table tr:last-child td {
+	border-bottom: 0;
+}
+
+.data-table td:first-child {
+	font-weight: 700;
+	color: var(--deep);
+}
+
+.data-table td {
+	color: var(--muted);
+}
+
+.tag {
+	display: inline-block;
+	padding: 3px 10px;
+	border-radius: 20px;
+	font-size: 10px;
+	font-weight: 700;
+	background: #e4eee1;
+	color: var(--deep);
+}
+
+.tag-build {
+	background: #f4e8d3;
+	color: #8a6430;
+}
+
+.placeholder-note {
+	margin-top: 26px;
+	padding: 12px 16px;
+	border-left: 3px solid var(--gold);
+	background: #f4f1e8;
+	font-size: 11px;
+	color: var(--muted);
+	border-radius: 0 6px 6px 0;
+}
+
+.cta-row {
+	display: flex;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin-top: 26px;
 }
