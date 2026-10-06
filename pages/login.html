@@ -1,91 +1,111 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Resident Login | Sage & Bloom</title>
+		<meta name="description" content="Resident login page prototype for Sage & Bloom." />
+		<meta name="robots" content="index,follow" />
+		<link rel="icon" href="../images/icons/favicon.svg" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/footer.css" />
+		<link rel="stylesheet" href="../css/auth.css" />
+		<link rel="stylesheet" href="../css/responsive.css" />
+	</head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resident Login | Sage & Bloom</title>
-  <meta name="description" content="Resident login page prototype for Sage & Bloom.">
-  <meta name="robots" content="index,follow">
-  <link rel="icon" href="../images/icons/favicon.svg">
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/auth.css">
-  <link rel="stylesheet" href="../css/responsive.css">
-</head>
-
-<body><a class="skip-link" href="#main-content">Skip to content</a>
-  <header class="site-header">
-    <div class="container navbar">
-      <a class="logo" href="../index.html"><span class="logo-mark">⌂</span><span class="logo-text"><strong>Sage &amp;
-            Bloom</strong><span>RESIDENTIAL DEVELOPERS • CHENNAI</span></span></a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
-        <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
-      </button>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="../index.html">Home</a><a href="../pages/about.html">About Us</a><a
-          href="../pages/projects.html">Projects</a><a href="../pages/amenities.html">Amenities</a><a
-          href="../pages/why-us.html">Why Us</a><a href="../pages/contact.html">Contact</a>
-      </nav><a class="btn btn-primary header-cta" href="../pages/contact.html">Enquire Now</a>
-    </div>
-  </header>
-  <main id="main-content">
-    <div class="auth-wrap">
-      <div class="auth-image"><img src="../images/interiors/living.svg" alt="Modern home interior concept">
-        <div class="auth-copy">
-          <div class="eyebrow" style="color:#d9c08e">SAGE &amp; BLOOM</div>
-          <h1 style="font-size:48px">Welcome Back.</h1>
-          <p>Resident account access for the website prototype.</p>
-        </div>
-      </div>
-      <div class="auth-form">
-        <div class="auth-form-inner">
-          <div class="eyebrow">RESIDENT PORTAL</div>
-          <h1>Sign in.</h1>
-          <p class="auth-note">Use your registered email and password.</p>
-          <form class="form-card" id="loginForm" novalidate>
-            <div id="loginNotice" class="notice" role="status"></div>
-            <div class="field"><label for="email">Email Address</label><input id="email" type="email" required
-                placeholder="you@example.com"></div>
-            <div class="field"><label for="password">Password</label><input id="password" type="password" required
-                minlength="6" placeholder="Your password"></div><button class="btn btn-primary" type="submit"
-              style="width:100%">Login →</button>
-          </form>
-          <p class="auth-switch">Don’t have an account? <a href="register.html">Create one</a></p>
-        </div>
-      </div>
-    </div>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div><a class="logo" href="../index.html"><span class="logo-mark">⌂</span><span class="logo-text"><strong>Sage
-                &amp; Bloom</strong><span>CHENNAI RESIDENTIAL DEVELOPERS</span></span></a>
-          <p style="margin-top:16px;max-width:300px">Thoughtfully designed homes for modern Chennai families, combining
-            practical planning, considered materials and a customer-first approach.</p>
-        </div>
-        <div>
-          <h3>Quick Links</h3><a href="../index.html">Home</a><a href="../pages/about.html">About Us</a><a
-            href="../pages/projects.html">Projects</a><a href="../pages/amenities.html">Amenities</a>
-        </div>
-        <div>
-          <h3>Explore</h3><a href="../pages/why-us.html">Why Us</a><a
-            href="../pages/testimonials.html">Testimonials</a><a href="../pages/contact.html">Contact</a><a
-            href="../pages/login.html">Resident Login</a>
-        </div>
-        <div>
-          <h3>Chennai Office</h3>
-          <p>123 Green Park Road<br>Chennai, Tamil Nadu</p><a href="tel:+919876543210">+91 98765 43210</a><a
-            href="mailto:hello@sageandbloom.in">hello@sageandbloom.in</a>
-        </div>
-      </div>
-      <div class="footer-bottom"><span>© 2025 Sage &amp; Bloom. Prototype website.</span><span>Privacy Policy · Terms
-          &amp; Conditions</span></div>
-    </div>
-  </footer>
-  <script src="../js/navigation.js" defer></script>
-  <script src="../js/auth.js" defer></script>
-</body>
-
+	<body>
+		<a class="skip-link" href="#main-content">Skip to content</a>
+		<header class="site-header">
+			<div class="container navbar">
+				<a class="logo" href="../index.html"
+					><span class="logo-mark">⌂</span
+					><span class="logo-text"
+						><strong>Sage &amp; Bloom</strong><span>RESIDENTIAL DEVELOPERS • CHENNAI</span></span
+					></a
+				>
+				<button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+					<span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+				</button>
+				<nav class="nav-links" aria-label="Primary navigation">
+					<a href="../index.html">Home</a><a href="../pages/about.html">About Us</a
+					><a href="../pages/projects.html">Projects</a><a href="../pages/amenities.html">Amenities</a
+					><a href="../pages/why-us.html">Why Us</a><a href="../pages/contact.html">Contact</a>
+				</nav>
+				<a class="btn btn-primary header-cta" href="../pages/contact.html">Enquire Now</a>
+			</div>
+		</header>
+		<main id="main-content">
+			<div class="auth-wrap">
+				<div class="auth-image">
+					<img src="../images/interiors/living.svg" alt="Modern home interior concept" />
+					<div class="auth-copy">
+						<div class="eyebrow" style="color: #d9c08e">SAGE &amp; BLOOM</div>
+						<h1 style="font-size: 48px">Welcome Back.</h1>
+						<p>Resident account access for the website prototype.</p>
+					</div>
+				</div>
+				<div class="auth-form">
+					<div class="auth-form-inner">
+						<div class="eyebrow">RESIDENT PORTAL</div>
+						<h1>Sign in.</h1>
+						<p class="auth-note">Use your registered email and password.</p>
+						<form class="form-card" id="loginForm" novalidate>
+							<div id="loginNotice" class="notice" role="status"></div>
+							<div class="field">
+								<label for="email">Email Address</label
+								><input id="email" type="email" required placeholder="you@example.com" />
+							</div>
+							<div class="field">
+								<label for="password">Password</label
+								><input id="password" type="password" required minlength="6" placeholder="Your password" />
+							</div>
+							<button class="btn btn-primary" type="submit" style="width: 100%">Login →</button>
+						</form>
+						<p class="auth-switch">Don’t have an account? <a href="register.html">Create one</a></p>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer-grid">
+					<div>
+						<a class="logo" href="../index.html"
+							><span class="logo-mark">⌂</span
+							><span class="logo-text"
+								><strong>Sage &amp; Bloom</strong><span>CHENNAI RESIDENTIAL DEVELOPERS</span></span
+							></a
+						>
+						<p style="margin-top: 16px; max-width: 300px">
+							Thoughtfully designed homes for modern Chennai families, combining practical planning, considered
+							materials and a customer-first approach.
+						</p>
+					</div>
+					<div>
+						<h3>Quick Links</h3>
+						<a href="../index.html">Home</a><a href="../pages/about.html">About Us</a
+						><a href="../pages/projects.html">Projects</a><a href="../pages/amenities.html">Amenities</a>
+					</div>
+					<div>
+						<h3>Explore</h3>
+						<a href="../pages/why-us.html">Why Us</a><a href="../pages/testimonials.html">Testimonials</a
+						><a href="../pages/contact.html">Contact</a><a href="../pages/login.html">Resident Login</a>
+					</div>
+					<div>
+						<h3>Chennai Office</h3>
+						<p>123 Green Park Road<br />Chennai, Tamil Nadu</p>
+						<a href="tel:+919876543210">+91 98765 43210</a
+						><a href="mailto:hello@sageandbloom.in">hello@sageandbloom.in</a>
+					</div>
+				</div>
+				<div class="footer-bottom">
+					<span>© 2025 Sage &amp; Bloom. Prototype website.</span
+					><span>Privacy Policy · Terms &amp; Conditions</span>
+				</div>
+			</div>
+		</footer>
+		<script src="../js/navigation.js" defer></script>
+		<script src="../js/auth.js" defer></script>
+	</body>
 </html>
