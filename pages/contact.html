@@ -68,6 +68,7 @@
 						<div class="map-card">
 							<iframe
 								src="https://www.google.com/maps?q=Chennai,Tamil%20Nadu&output=embed"
+								title="Sage Bloom Chennai location map"
 								width="100%"
 								height="400"
 								style="border: 0"
@@ -90,7 +91,7 @@
 								type="text"
 								required
 								placeholder="Your name"
-								pattern="[A-Za-z ]{2,50}"
+								pattern="[A-Za-z]+(?:[ ][A-Za-z]+)*"
 								maxlength="50"
 								title="name should contains only letters and spaces"
 							/>
@@ -102,15 +103,23 @@
 								name="phone"
 								type="tel"
 								required
-								pattern="[0-9 +()-]{10,15}"
-								maxlength="15"
+								pattern="[0-9]{10}"
+								maxlength="10"
 								placeholder="Your phone number"
 								title="please enter a valid phone number"
 							/>
 						</div>
 						<div class="field">
 							<label for="email">Email</label
-							><input id="email" name="email" type="email" required placeholder="Your email" maxlength="100" />
+							><input
+								id="email"
+								name="email"
+								type="email"
+								required
+								placeholder="Your email"
+								maxlength="100"
+								autocomplete="email"
+							/>
 						</div>
 						<div class="field">
 							<label for="interest">Interested Project</label
@@ -128,6 +137,8 @@
 								id="message"
 								name="message"
 								required
+								minlength="4"
+								maxlength="600"
 								placeholder="Tell us your preferred location, BHK or budget range"
 							></textarea>
 						</div>
@@ -136,51 +147,6 @@
 				</div>
 			</section>
 			<section class="section section-soft">
-				<div class="container">
-					<div class="section-head reveal"><div><div class="eyebrow">WHAT HAPPENS NEXT</div><h2>After you send<br />your enquiry.</h2></div><p>No forms disappearing into a void. This is how we handle every enquiry.</p></div>
-					<div class="steps">
-						<article class="step reveal"><div class="step-num">01</div><h3>We read it</h3><p>A team member reviews your message, preferred project and budget range.</p></article>
-						<article class="step reveal"><div class="step-num">02</div><h3>We get in touch</h3><p>We call or email to understand your needs and answer your first questions.</p></article>
-						<article class="step reveal"><div class="step-num">03</div><h3>We arrange a visit</h3><p>Together we set a time to see the project and its surroundings.</p></article>
-						<article class="step reveal"><div class="step-num">04</div><h3>We share the details</h3><p>You receive information on pricing, inclusions and documents to review at your pace.</p></article>
-					</div>
-				</div>
-			</section>
-
-			<section class="section">
-				<div class="container">
-					<div class="section-head reveal"><div><div class="eyebrow">BEFORE YOU VISIT</div><h2>Make the most of<br />your site visit.</h2></div><p>A little preparation helps you compare projects and ask better questions on the day.</p></div>
-					<div class="grid-2">
-						<article class="card reveal"><h3>Helpful to tell us</h3><ul class="checklist">
-						<li>Your preferred area or commute needs</li>
-						<li>2 BHK or 3 BHK, and how many people will live in the home</li>
-						<li>An approximate budget range</li>
-						<li>When you hope to move in</li>
-					</ul></article>
-						<article class="card reveal"><h3>Helpful to bring</h3><ul class="checklist">
-						<li>A list of questions (see the checklist on our Why Us page)</li>
-						<li>Family members who will use the home daily</li>
-						<li>A phone to photograph layouts and details</li>
-						<li>An ID for entry at the project site</li>
-					</ul></article>
-					</div>
-				</div>
-			</section>
-
-			<section class="section section-soft">
-				<div class="container">
-					<div class="side-layout">
-						<div class="reveal"><div class="eyebrow">CONTACT QUESTIONS</div><h2>Before you<br />get in touch.</h2><p class="lead">A few practical answers about enquiries and visits.</p></div>
-						<div class="faq">
-							<details class="faq-item" open><summary>Is there any obligation when I enquire or visit?</summary><p>No. Enquiries and site visits are meant to help you gather information. You decide if and when to take the next step.</p></details>
-							<details class="faq-item"><summary>Can I visit outside office hours or on Sundays?</summary><p>Our regular hours are Monday to Saturday, 9:00 AM to 6:00 PM. If you need another time, mention it in your message and the team will do their best to help.</p></details>
-							<details class="faq-item"><summary>Can my family come along?</summary><p>Please do. Homes are lived in by the whole household, so we encourage everyone who will use the home to visit.</p></details>
-							<details class="faq-item"><summary>Can I get information by phone or email instead of visiting?</summary><p>Yes. Share your questions by phone or email and the team can send project details before you decide to visit.</p></details>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="section">
 				<div class="container">
 					<div class="banner">
 						<div>
