@@ -1,0 +1,47 @@
+.project-toolbar {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	align-items: center;
+	margin-bottom: 28px;
+}
+
+.filters {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.filter {
+	border: 1px solid var(--line);
+	background: var(--paper);
+	padding: 9px 14px;
+	border-radius: 20px;
+	font-size: 10px;
+	font-weight: 700;
+}
+
+.filter.active,
+.filter:hover {
+	background: var(--deep);
+	color: #fff;
+	border-color: var(--deep);
+}
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 24px;
+}
+
+.project-card {
+	overflow: hidden;
+}
+
+.project-card img {
+	height: 310px;
+}
+
+.project-card[hidden] {
+	display: none !important;
+}

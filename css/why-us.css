@@ -1,0 +1,20 @@
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px
+}
+
+.why-number {
+    font-size: 12px;
+    color: var(--gold);
+    font-weight: 700
+}
+
+.promise {
+    background: var(--deep);
+    color: #fff
+}
+
+.promise p {
+    color: #cbd4cb
+}

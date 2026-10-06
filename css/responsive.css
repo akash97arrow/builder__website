@@ -1,0 +1,248 @@
+@media(max-width:1000px) {
+    .nav-links {
+        gap: 13px
+    }
+
+    .header-cta {
+        display: none
+    }
+
+    .grid-4,
+    .amenity-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .detail-highlights {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .detail-highlights .feature {
+        border-bottom: 1px solid var(--line)
+    }
+
+    .location-card {
+        grid-template-columns: 1fr
+    }
+
+    .auth-wrap {
+        grid-template-columns: 1fr
+    }
+
+    .auth-image {
+        min-height: 360px
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr
+    }
+}
+
+@media(max-width:760px) {
+    .container {
+        width: min(var(--max), calc(100% - 30px))
+    }
+
+    .contact-layout {
+        grid-template-columns: 1fr
+    }
+
+    .navbar {
+        height: 68px
+    }
+
+    .menu-toggle {
+        display: block
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        left: 15px;
+        right: 15px;
+        top: 72px;
+        padding: 15px;
+        background: var(--paper);
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
+        border-radius: 10px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2px
+    }
+
+    .nav-links.open {
+        display: flex
+    }
+
+    .nav-links a {
+        padding: 12px
+    }
+
+    .hero {
+        min-height: 570px
+    }
+
+    .hero-inner {
+        padding: 70px 0
+    }
+
+    .section {
+        padding: 65px 0
+    }
+
+    .section-head,
+    .split {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 22px;
+        align-items: start
+    }
+
+    .grid-2,
+    .grid-3,
+    .why-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr
+    }
+
+    .grid-4,
+    .amenity-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+        margin-top: -20px
+    }
+
+    .stat:nth-child(2) {
+        border-right: 0
+    }
+
+    .stat:nth-child(-n+2) {
+        border-bottom: 1px solid var(--line)
+    }
+
+    .banner {
+        display: grid;
+        padding: 30px
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .gallery img:first-child {
+        height: 300px;
+        grid-row: auto;
+        grid-column: span 2
+    }
+
+    .gallery img {
+        height: 180px
+    }
+
+    .detail-grid {
+        grid-template-columns: 1fr
+    }
+
+    .project-switcher .container {
+        display: block
+    }
+
+    .project-switcher-label {
+        display: block;
+        margin-bottom: 9px
+    }
+
+    .auth-image {
+        min-height: 300px
+    }
+
+    .auth-form {
+        padding: 40px 15px
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .footer-bottom {
+        display: grid
+    }
+
+    .project-detail-hero {
+        min-height: 380px
+    }
+}
+
+@media(max-width:480px) {
+    h1 {
+        font-size: 42px
+    }
+
+    .detail-highlights {
+        grid-template-columns: minmax(0, 1fr)
+    }
+
+    .grid-4,
+    .amenity-grid,
+    .stats,
+    .footer-grid {
+        grid-template-columns: 1fr
+    }
+
+    .stat {
+        border-right: 0;
+        border-bottom: 1px solid var(--line)
+    }
+
+    .stat:last-child {
+        border-bottom: 0
+    }
+
+    .gallery {
+        grid-template-columns: 1fr
+    }
+
+    .gallery img:first-child {
+        grid-column: auto
+    }
+
+    .spec-list {
+        grid-template-columns: 1fr
+    }
+
+    .spec-list div:nth-child(odd) {
+        border-right: 0
+    }
+
+    .hero-actions {
+        display: grid
+    }
+
+    .hero-actions .btn {
+        width: 100%
+    }
+
+    .project-card img {
+        height: 250px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+
+    *,
+    *:before,
+    *:after {
+        animation: none !important;
+        transition: none !important
+    }
+}

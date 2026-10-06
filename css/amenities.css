@@ -1,0 +1,16 @@
+.amenity-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px
+}
+
+.amenity-grid .feature {
+    min-height: 170px
+}
+
+.amenity-hero img {
+    height: 480px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px
+}

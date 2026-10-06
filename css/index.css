@@ -1,0 +1,19 @@
+.home-intro {
+    padding-top: 110px
+}
+
+.home-intro .section-head {
+    margin-bottom: 48px
+}
+
+.home-feature-image {
+    height: 440px !important
+}
+
+.home-location {
+    background: linear-gradient(135deg, #e9ede5, #f6f2e9)
+}
+
+.home-location .card {
+    background: rgba(255, 255, 255, .72)
+}

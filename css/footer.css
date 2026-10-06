@@ -1,0 +1,17 @@
+.footer .logo-mark {
+    border-color: #778a79;
+    color: #d6c18f
+}
+
+.footer .logo:hover .logo-mark {
+    background: #fff;
+    color: var(--deep)
+}
+
+.footer .logo-text strong {
+    color: #fff
+}
+
+.footer .logo-text span {
+    color: #8f9d92
+}

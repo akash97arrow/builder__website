@@ -1,0 +1,15 @@
+.about-values {
+    margin-top: 45px
+}
+
+.about-values .feature {
+    min-height: 180px
+}
+
+.about-story {
+    background: #ebe9df
+}
+
+.about-story .split img {
+    height: 430px
+}
