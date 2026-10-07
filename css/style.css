@@ -128,7 +128,7 @@ p {
 .btn-outline {
 	border-color: var(--green);
 	color: var(--deep);
-	background: transparent;
+	/* background: transparent; */
 }
 
 .btn:hover {
@@ -169,7 +169,7 @@ p {
 }
 
 .card p {
-	font-size: 12px;
+	font-size: 14px;
 	color: var(--muted);
 	margin-top: 9px;
 }
@@ -185,7 +185,7 @@ p {
 .section-head > p {
 	max-width: 430px;
 	color: var(--muted);
-	font-size: 13px;
+	font-size: 15px;
 }
 
 .site-header {
@@ -247,7 +247,7 @@ p {
 }
 
 .nav-links a {
-	font-size: 10px;
+	font-size: 13px;
 	font-weight: 600;
 	color: #586158;
 	position: relative;
@@ -282,7 +282,7 @@ p {
 	color: var(--deep);
 }
 
-.hero {
+/* .hero {
 	min-height: 650px;
 	display: grid;
 	align-items: center;
@@ -324,6 +324,168 @@ p {
 	display: flex;
 	gap: 12px;
 	flex-wrap: wrap;
+} */
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.hero {
+    position: relative;
+    min-height: 650px;
+
+    display: grid;
+    align-items: center;
+
+    background: var(--cream);
+
+    overflow: hidden;
+
+    border-radius: 0;
+}
+
+
+/* =========================================
+   HERO IMAGE
+========================================= */
+
+.hero-image {
+    position: absolute;
+    inset: 0;
+
+    z-index: 0;
+
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center right;
+}
+
+
+/* =========================================
+   LIGHT GRADIENT OVER IMAGE
+========================================= */
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f7f4ec 0%,
+            rgba(247, 244, 236, 0.98) 22%,
+            rgba(247, 244, 236, 0.90) 34%,
+            rgba(247, 244, 236, 0.65) 48%,
+            rgba(247, 244, 236, 0.20) 68%,
+            rgba(247, 244, 236, 0) 100%
+        );
+}
+
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.hero-inner {
+    position: relative;
+
+    z-index: 2;
+
+    color: var(--ink);
+
+    padding: 90px;
+
+    width: 100%;
+}
+
+
+/* =========================================
+   HERO HEADING
+========================================= */
+
+.hero-inner h1 {
+    max-width: 570px;
+
+    color: #263b4d;
+
+    font-size: clamp(46px, 5vw, 70px);
+
+    line-height: 0.98;
+
+    letter-spacing: -1.5px;
+}
+
+
+/* =========================================
+   HERO DESCRIPTION
+========================================= */
+
+.hero-inner .lead {
+    color: #68746f;
+
+    max-width: 470px;
+
+    margin: 22px 0 28px;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   HERO BUTTONS
+========================================= */
+
+.hero-actions {
+    display: flex;
+
+    gap: 12px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Primary button */
+
+.hero-actions .btn-primary {
+    background: #687751;
+
+    color: #fff;
+
+    border: 1px solid #687751;
+}
+
+.hero-actions .btn-primary:hover {
+    background: #53623f;
+
+    transform: translateY(-2px);
+}
+
+
+/* Secondary button */
+
+.hero-actions .btn-outline {
+    background: rgba(255, 255, 255, 0.75);
+
+    color: #4c584f;
+
+    border-color: #4c584f;
+}
+
+.hero-actions .btn-outline:hover {
+    background: #fff;
+
+    border-color: var(--green);
 }
 
 .stats {
@@ -389,12 +551,12 @@ p {
 	justify-content: space-between;
 	gap: 15px;
 	color: var(--muted);
-	font-size: 10px;
+	font-size: 13px;
 	margin: 10px 0;
 }
 
 .project-link {
-	font-size: 11px;
+	font-size: 13px;
 	font-weight: 700;
 	color: var(--deep);
 }
@@ -527,7 +689,7 @@ p {
 }
 
 .feature p {
-	font-size: 11px;
+	font-size: 13px;
 	color: var(--muted);
 	margin-top: 8px;
 }
@@ -664,7 +826,7 @@ p {
 }
 
 .project-switcher-links a {
-	font-size: 9px;
+	font-size: 13px;
 	padding: 7px 10px;
 	border-radius: 4px;
 	white-space: nowrap;
@@ -734,7 +896,7 @@ p {
 }
 
 .step p {
-	font-size: 12px;
+	font-size: 14px;
 	color: var(--muted);
 	margin-top: 9px;
 }
@@ -780,7 +942,7 @@ p {
 .card .checklist li,
 .feature .checklist li,
 .floor-body .checklist li {
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .side-layout {
@@ -817,7 +979,7 @@ p {
 	list-style: none;
 	padding: 18px 54px 18px 22px;
 	font-weight: 700;
-	font-size: 13px;
+	font-size: 14px;
 	color: var(--deep);
 	position: relative;
 }
@@ -843,7 +1005,7 @@ p {
 
 .faq-item p {
 	padding: 0 22px 20px;
-	font-size: 12px;
+	font-size: 14px;
 	color: var(--muted);
 }
 
