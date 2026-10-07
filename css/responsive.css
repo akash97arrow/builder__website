@@ -1,248 +1,1462 @@
-@media(max-width:1000px) {
+/* =========================================================
+   RESPONSIVE / MOBILE CSS
+   ALL PAGES
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
     .nav-links {
-        gap: 13px
+        gap: 13px;
     }
 
     .header-cta {
-        display: none
+        display: none;
     }
 
     .grid-4,
-    .amenity-grid {
-        grid-template-columns: repeat(2, 1fr)
-    }
-
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr)
-    }
-
+    .amenity-grid,
     .detail-highlights {
-        grid-template-columns: repeat(2, 1fr)
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     .detail-highlights .feature {
-        border-bottom: 1px solid var(--line)
+        border-bottom: 1px solid var(--line);
     }
 
-    .location-card {
-        grid-template-columns: 1fr
-    }
-
-    .auth-wrap {
-        grid-template-columns: 1fr
+    .location-card,
+    .auth-wrap,
+    .contact-layout {
+        grid-template-columns: 1fr;
     }
 
     .auth-image {
-        min-height: 360px
+        min-height: 360px;
     }
 
     .projects-grid {
-        grid-template-columns: 1fr
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
-@media(max-width:760px) {
+
+/* =========================================================
+   TABLET / SMALL LAPTOP
+========================================================= */
+
+@media (max-width: 760px) {
+
+    /* =====================================================
+       CONTAINER
+    ===================================================== */
+
     .container {
-        width: min(var(--max), calc(100% - 30px))
+        width: calc(100% - 30px);
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .contact-layout {
-        grid-template-columns: 1fr
-    }
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
 
     .navbar {
-        height: 68px
+        height: 68px;
+        gap: 12px;
     }
 
     .menu-toggle {
-        display: block
+        display: block;
+        flex: 0 0 auto;
     }
 
     .nav-links {
         display: none;
+
         position: absolute;
+
         left: 15px;
         right: 15px;
         top: 72px;
-        padding: 15px;
+
+        width: auto;
+
+        padding: 12px;
+
         background: var(--paper);
+
         border: 1px solid var(--line);
-        box-shadow: var(--shadow);
+
         border-radius: 10px;
+
+        box-shadow: var(--shadow);
+
         flex-direction: column;
+
         align-items: stretch;
-        gap: 2px
+
+        gap: 2px;
+
+        z-index: 999;
     }
 
     .nav-links.open {
-        display: flex
+        display: flex;
     }
 
     .nav-links a {
-        padding: 12px
+        display: block;
+
+        width: 100%;
+
+        padding: 12px;
+
+        font-size: 11px;
     }
 
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
     .hero {
-        min-height: 570px
+        min-height: 570px;
     }
 
     .hero-inner {
-        padding: 70px 0
+        width: 100%;
+        padding: 70px 0;
     }
+
+    .hero-inner h1 {
+        max-width: 100%;
+    }
+
+    .hero-inner .lead {
+        max-width: 100%;
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+    .hero-actions {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    /* =====================================================
+       SECTIONS
+    ===================================================== */
 
     .section {
-        padding: 65px 0
+        padding: 65px 0;
     }
 
-    .section-head,
-    .split {
+    .section-head {
         display: grid;
+
         grid-template-columns: 1fr;
-        gap: 22px;
-        align-items: start
+
+        gap: 20px;
+
+        align-items: start;
     }
+
+    .split,
+    .contact-layout,
+    .detail-grid {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+
+        align-items: start;
+    }
+
+
+    /* =====================================================
+       GENERAL GRIDS
+    ===================================================== */
 
     .grid-2,
     .grid-3,
     .why-grid,
     .testimonial-grid {
-        grid-template-columns: 1fr
-    }
-
-    .grid-4,
-    .amenity-grid {
-        grid-template-columns: 1fr 1fr
-    }
-
-    .stats {
-        grid-template-columns: 1fr 1fr;
-        margin-top: -20px
-    }
-
-    .stat:nth-child(2) {
-        border-right: 0
-    }
-
-    .stat:nth-child(-n+2) {
-        border-bottom: 1px solid var(--line)
-    }
-
-    .banner {
-        display: grid;
-        padding: 30px
-    }
-
-    .gallery {
-        grid-template-columns: 1fr 1fr
-    }
-
-    .gallery img:first-child {
-        height: 300px;
-        grid-row: auto;
-        grid-column: span 2
-    }
-
-    .gallery img {
-        height: 180px
-    }
-
-    .detail-grid {
-        grid-template-columns: 1fr
-    }
-
-    .project-switcher .container {
-        display: block
-    }
-
-    .project-switcher-label {
-        display: block;
-        margin-bottom: 9px
-    }
-
-    .auth-image {
-        min-height: 300px
-    }
-
-    .auth-form {
-        padding: 40px 15px
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr 1fr
-    }
-
-    .footer-bottom {
-        display: grid
-    }
-
-    .project-detail-hero {
-        min-height: 380px
-    }
-}
-
-@media(max-width:480px) {
-    h1 {
-        font-size: 42px
-    }
-
-    .detail-highlights {
-        grid-template-columns: minmax(0, 1fr)
+        grid-template-columns: 1fr;
     }
 
     .grid-4,
     .amenity-grid,
-    .stats,
-    .footer-grid {
-        grid-template-columns: 1fr
+    .detail-highlights {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+
+    /* =====================================================
+       PREVENT OVERFLOW
+    ===================================================== */
+
+    .grid-2 > *,
+    .grid-3 > *,
+    .grid-4 > *,
+    .amenity-grid > *,
+    .testimonial-grid > *,
+    .why-grid > *,
+    .detail-highlights > *,
+    .split > *,
+    .detail-grid > *,
+    .contact-layout > * {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+
+    /* =====================================================
+       STATS
+    ===================================================== */
+
+    .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        margin-top: -20px;
     }
 
     .stat {
-        border-right: 0;
-        border-bottom: 1px solid var(--line)
+        min-width: 0;
     }
 
-    .stat:last-child {
-        border-bottom: 0
+    .stat:nth-child(2) {
+        border-right: 0;
     }
+
+    .stat:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--line);
+    }
+
+
+    /* =====================================================
+       CTA / BANNER
+    ===================================================== */
+
+    .banner {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        padding: 30px;
+
+        gap: 22px;
+    }
+
+
+    /* =====================================================
+       GALLERY
+    ===================================================== */
 
     .gallery {
-        grid-template-columns: 1fr
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .gallery img {
+        width: 100%;
+
+        height: 180px;
+
+        object-fit: cover;
     }
 
     .gallery img:first-child {
-        grid-column: auto
+        height: 300px;
+
+        grid-column: span 2;
     }
 
-    .spec-list {
-        grid-template-columns: 1fr
+
+    /* =====================================================
+       FORMS
+    ===================================================== */
+
+    .form-card {
+        width: 100%;
+
+        padding: 22px 18px;
     }
 
-    .spec-list div:nth-child(odd) {
-        border-right: 0
+    .auth-image {
+        min-height: 300px;
+
+        padding: 35px 25px;
     }
 
-    .hero-actions {
-        display: grid
+    .auth-form {
+        padding: 40px 15px;
     }
 
-    .hero-actions .btn {
-        width: 100%
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 28px 20px;
     }
 
-    .project-card img {
-        height: 250px
+    .footer-bottom {
+        display: grid;
+
+        gap: 10px;
+    }
+
+
+    /* =====================================================
+       PROJECT PAGES
+    ===================================================== */
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-detail-hero {
+        min-height: 380px;
+    }
+
+    .project-switcher .container {
+        display: block;
+    }
+
+    .project-switcher-label {
+        display: block;
+
+        margin-bottom: 9px;
+    }
+
+    .project-switcher-links {
+        width: 100%;
+
+        max-width: 100%;
+
+        overflow-x: auto;
+
+        padding-bottom: 4px;
     }
 }
 
-@media(prefers-reduced-motion:reduce) {
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 600px) {
+
+
+    /* =====================================================
+       CONTAINER
+    ===================================================== */
+
+    .container {
+        width: calc(100% - 30px);
+
+        max-width: 100%;
+    }
+
+
+    /* =====================================================
+       TYPOGRAPHY
+    ===================================================== */
+
+    h1 {
+        font-size: 40px;
+
+        line-height: 1.05;
+    }
+
+    h2 {
+        font-size: 32px;
+
+        line-height: 1.1;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    p {
+        max-width: 100%;
+    }
+
+    .section {
+        padding: 58px 0;
+    }
+
+    .eyebrow {
+        font-size: 9px;
+
+        letter-spacing: 0.14em;
+    }
+
+
+    /* =====================================================
+       HEADER
+    ===================================================== */
+
+    .navbar {
+        height: 64px;
+
+        gap: 10px;
+    }
+
+    .logo {
+        min-width: 0;
+
+        gap: 8px;
+    }
+
+    .logo-mark {
+        width: 30px;
+
+        height: 30px;
+
+        flex: 0 0 30px;
+    }
+
+    .logo-text {
+        min-width: 0;
+    }
+
+    .logo-text strong {
+        font-size: 15px;
+    }
+
+    .logo-text span {
+        font-size: 6px;
+    }
+
+    .nav-links {
+        left: 10px;
+
+        right: 10px;
+
+        top: 68px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .hero {
+        min-height: 540px;
+    }
+
+    .hero-inner {
+        padding: 55px 0;
+    }
+
+    .hero-inner h1 {
+        width: 100%;
+
+        max-width: 100%;
+
+        font-size: 42px;
+
+        line-height: 1;
+    }
+
+    .hero-inner .lead {
+        width: 100%;
+
+        max-width: 100%;
+
+        font-size: 13px;
+
+        line-height: 1.65;
+
+        margin: 18px 0 24px;
+    }
+
+    .hero-actions {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        width: 100%;
+
+        gap: 10px;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+
+        min-height: 46px;
+    }
+
+
+    /* =====================================================
+       ALL MULTI-COLUMN CARDS
+       
+       On phone every card becomes one full-width box.
+    ===================================================== */
+
+    .grid-2,
+    .grid-3,
+    .grid-4,
+    .amenity-grid,
+    .why-grid,
+    .testimonial-grid,
+    .detail-highlights {
+        display: grid;
+
+        grid-template-columns: 1fr !important;
+
+        width: 100%;
+
+        gap: 10px !important;
+    }
+
+
+    /* =====================================================
+       ALL CARD BOXES
+       
+       Gives cards the same visual treatment as the
+       screenshot.
+    ===================================================== */
+
+    .grid-2 > *,
+    .grid-3 > *,
+    .grid-4 > *,
+    .amenity-grid > *,
+    .why-grid > *,
+    .testimonial-grid > *,
+    .detail-highlights > * {
+
+        width: 100%;
+
+        min-width: 0;
+
+        max-width: 100%;
+
+        padding: 14px 12px;
+
+        background: var(--paper);
+
+        border: 1px solid var(--line);
+
+        border-radius: 7px;
+
+        box-shadow: none;
+
+        overflow: hidden;
+    }
+
+
+    /* =====================================================
+       NORMAL .CARD
+       
+       Home/location/etc.
+    ===================================================== */
+
+    .card {
+        width: 100%;
+
+        min-width: 0;
+
+        padding: 14px 12px;
+
+        background: var(--paper);
+
+        border: 1px solid var(--line);
+
+        border-radius: 7px;
+
+        box-shadow: none;
+
+        overflow: hidden;
+    }
+
+
+    /* =====================================================
+       FEATURE
+       
+       About / Amenities / Project details
+    ===================================================== */
+
+    .feature {
+        width: 100%;
+
+        min-width: 0;
+
+        min-height: 0;
+
+        height: auto;
+
+        padding: 14px 12px;
+
+        background: var(--paper);
+
+        border: 1px solid var(--line);
+
+        border-radius: 7px;
+
+        box-shadow: none;
+
+        overflow: hidden;
+    }
+
+
+    /* =====================================================
+       FEATURE / CARD HEADING
+    ===================================================== */
+
+    .card h3,
+    .feature h3,
+    .why-grid h3,
+    .testimonial-grid h3 {
+        margin: 0 0 5px;
+
+        max-width: 100%;
+
+        font-size: 16px;
+
+        line-height: 1.25;
+
+        overflow-wrap: break-word;
+    }
+
+
+    /* =====================================================
+       FEATURE / CARD PARAGRAPH
+    ===================================================== */
+
+    .card p,
+    .feature p,
+    .why-grid p,
+    .testimonial-grid p {
+        margin: 0;
+
+        max-width: 100%;
+
+        font-size: 10px;
+
+        line-height: 1.55;
+
+        color: var(--muted);
+
+        overflow-wrap: break-word;
+    }
+
+
+    /* =====================================================
+       NUMBER CIRCLES
+       
+       Applies to About / Why Us / other numbered cards.
+    ===================================================== */
+
+    .icon-circle,
+    .why-number {
+        width: 28px;
+
+        height: 28px;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        margin-bottom: 11px;
+
+        border-radius: 50%;
+
+        background: #eef1eb;
+
+        color: var(--green);
+
+        font-size: 10px;
+
+        line-height: 1;
+
+        flex-shrink: 0;
+    }
+
+
+    /* =====================================================
+       ABOUT PAGE
+    ===================================================== */
+
+    .about-values {
+        display: grid;
+
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+
+        width: 100%;
+
+        margin-top: 30px;
+    }
+
+    .about-values .feature {
+        width: 100%;
+
+        min-height: 0;
+
+        padding: 14px 12px;
+    }
+
+    .about-values .icon-circle {
+        width: 28px;
+
+        height: 28px;
+
+        margin-bottom: 11px;
+    }
+
+
+    /* =====================================================
+       AMENITIES PAGE
+    ===================================================== */
+
+    .amenity-grid {
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+    }
+
+    .amenity-grid .feature {
+        min-height: 0;
+
+        width: 100%;
+
+        padding: 14px 12px;
+    }
+
+    .amenity-hero img {
+        width: 100%;
+
+        height: 280px;
+
+        object-fit: cover;
+
+        border-radius: 8px;
+    }
+
+
+    /* =====================================================
+       WHY US PAGE
+    ===================================================== */
+
+    .why-grid {
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+    }
+
+    .why-grid > * {
+        width: 100%;
+
+        padding: 14px 12px;
+    }
+
+    .why-number {
+        margin-bottom: 10px;
+    }
+
+
+    /* =====================================================
+       TESTIMONIALS PAGE
+    ===================================================== */
+
+    .testimonial-grid {
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+    }
+
+    .testimonial-grid > * {
+        width: 100%;
+
+        padding: 18px 14px;
+    }
+
+    .quote {
+        font-size: 19px;
+
+        line-height: 1.4;
+    }
+
+    .person {
+        margin-top: 18px;
+    }
+
+
+    /* =====================================================
+       DETAIL HIGHLIGHTS
+    ===================================================== */
+
+    .detail-highlights {
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+
+        border: 0;
+    }
+
+    .detail-highlights .feature {
+        width: 100%;
+
+        border: 1px solid var(--line);
+
+        border-radius: 7px;
+
+        padding: 14px 12px;
+    }
+
+    .detail-highlights .feature:last-child {
+        border: 1px solid var(--line);
+    }
+
+
+    /* =====================================================
+       STATS
+    ===================================================== */
+
+    .stats {
+        display: grid;
+
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+
+        margin-top: -15px;
+
+        width: 100%;
+
+        border-radius: 8px;
+    }
+
+    .stat {
+        width: 100%;
+
+        padding: 18px;
+
+        border: 1px solid var(--line);
+
+        border-radius: 7px;
+
+        background: var(--paper);
+    }
+
+    .stat:last-child {
+        border-bottom: 1px solid var(--line);
+    }
+
+    .stat strong {
+        font-size: 24px;
+    }
+
+
+    /* =====================================================
+       SECTION HEAD
+    ===================================================== */
+
+    .section-head {
+        gap: 16px;
+
+        margin-bottom: 28px;
+    }
+
+    .section-head > p {
+        width: 100%;
+
+        max-width: 100%;
+
+        font-size: 12px;
+
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       SPLIT SECTIONS
+    ===================================================== */
+
+    .split {
+        grid-template-columns: 1fr;
+
+        gap: 24px;
+    }
+
+    .split img {
+        width: 100%;
+
+        height: 300px;
+
+        object-fit: cover;
+    }
+
+
+    /* =====================================================
+       ABOUT IMAGES
+    ===================================================== */
+
+    .about-story .split img {
+        width: 100%;
+
+        height: 300px;
+
+        object-fit: cover;
+    }
+
+
+    /* =====================================================
+       GALLERY
+    ===================================================== */
+
+    .gallery {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .gallery img:first-child {
+        grid-column: auto;
+
+        width: 100%;
+
+        height: 260px;
+    }
+
+    .gallery img {
+        width: 100%;
+
+        height: 210px;
+    }
+
+
+    /* =====================================================
+       BANNER / CTA
+    ===================================================== */
+
+    .banner {
+        width: 100%;
+
+        padding: 24px 20px;
+
+        border-radius: 9px;
+    }
+
+    .banner h2 {
+        font-size: 29px;
+    }
+
+    .banner p {
+        font-size: 12px;
+
+        line-height: 1.7;
+    }
+
+    .banner .btn {
+        width: 100%;
+    }
+
+
+    /* =====================================================
+       FORMS
+    ===================================================== */
+
+    .form-card {
+        width: 100%;
+
+        padding: 20px 16px;
+
+        border-radius: 9px;
+    }
+
+    .field {
+        width: 100%;
+    }
+
+    .field input,
+    .field textarea,
+    .field select {
+        width: 100%;
+
+        max-width: 100%;
+    }
+
+
+    /* =====================================================
+       CONTACT
+    ===================================================== */
+
+    .contact-layout {
+        grid-template-columns: 1fr;
+
+        gap: 24px;
+    }
+
+    .contact-item {
+        width: 100%;
+
+        padding: 16px;
+
+        background: var(--paper);
+
+        border: 1px solid var(--line);
+
+        border-radius: 7px;
+    }
+
+    .map-card {
+        width: 100%;
+
+        height: 240px;
+    }
+
+
+    /* =====================================================
+       PROJECT LIST
+    ===================================================== */
+
+    .project-toolbar {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 14px;
+    }
+
+    .filters {
+        width: 100%;
+
+        max-width: 100%;
+
+        display: flex;
+
+        flex-wrap: nowrap;
+
+        overflow-x: auto;
+
+        gap: 8px;
+
+        padding-bottom: 5px;
+
+        -webkit-overflow-scrolling: touch;
+
+        scrollbar-width: none;
+    }
+
+    .filters::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter {
+        flex: 0 0 auto;
+
+        white-space: nowrap;
+    }
+
+
+    /* =====================================================
+       PROJECT CARDS
+    ===================================================== */
+
+    .projects-grid {
+        display: grid;
+
+        grid-template-columns: 1fr !important;
+
+        width: 100%;
+
+        gap: 10px !important;
+    }
+
+    .project-card {
+        width: 100%;
+
+        min-width: 0;
+
+        background: var(--paper);
+
+        border: 1px solid var(--line);
+
+        border-radius: 7px;
+
+        overflow: hidden;
+
+        box-shadow: none;
+    }
+
+    .project-card img {
+        width: 100%;
+
+        height: 240px;
+
+        object-fit: cover;
+    }
+
+    .image-card-body {
+        padding: 16px 14px;
+    }
+
+
+    /* =====================================================
+       PROJECT DETAIL
+    ===================================================== */
+
+    .project-detail-hero {
+        width: 100%;
+
+        min-height: 330px;
+    }
+
+    .detail-section {
+        padding: 58px 0;
+    }
+
+    .floor-card {
+        width: 100%;
+
+        border-radius: 7px;
+    }
+
+    .floor-plan {
+        width: 100%;
+
+        height: 190px;
+    }
+
+    .floor-body {
+        padding: 17px;
+    }
+
+    .spec-list {
+        grid-template-columns: 1fr;
+    }
+
+    .spec-list div:nth-child(odd) {
+        border-right: 0;
+    }
+
+    .location-card {
+        grid-template-columns: 1fr;
+    }
+
+    .location-card img {
+        width: 100%;
+
+        height: 260px;
+
+        object-fit: cover;
+    }
+
+
+    /* =====================================================
+       AUTH / LOGIN / REGISTER
+    ===================================================== */
+
+    .auth-wrap {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+    }
+
+    .auth-image {
+        width: 100%;
+
+        min-height: 260px;
+
+        padding: 30px 20px;
+    }
+
+    .auth-form {
+        width: 100%;
+
+        padding: 40px 15px;
+    }
+
+    .auth-form-inner {
+        width: 100%;
+    }
+
+    .auth-form-inner h1 {
+        font-size: 36px;
+    }
+
+
+    /* =====================================================
+       FOOTER
+    ===================================================== */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+
+        gap: 28px;
+    }
+
+    .footer {
+        padding: 50px 0 18px;
+    }
+
+    .footer-bottom {
+        gap: 8px;
+    }
+
+
+    /* =====================================================
+       TEXT OVERFLOW PROTECTION
+    ===================================================== */
+
+    p,
+    a,
+    h1,
+    h2,
+    h3,
+    h4,
+    span,
+    .fact,
+    .project-meta {
+        max-width: 100%;
+
+        overflow-wrap: anywhere;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+========================================================= */
+
+@media (max-width: 380px) {
+
+    .container {
+        width: calc(100% - 24px);
+    }
+
+    h1,
+    .hero-inner h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 29px;
+    }
+
+    .hero {
+        min-height: 500px;
+    }
+
+    .hero-inner {
+        padding: 45px 0;
+    }
+
+    .card,
+    .feature {
+        padding: 16px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo-text strong {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
     html {
-        scroll-behavior: auto
+        scroll-behavior: auto;
     }
 
     *,
-    *:before,
-    *:after {
+    *::before,
+    *::after {
         animation: none !important;
-        transition: none !important
+
+        transition: none !important;
+    }
+}
+/* =========================================================
+   MOBILE - STEPS CARDS
+   Force 4-column steps into separate full-width boxes
+========================================================= */
+
+@media screen and (max-width: 600px) {
+
+    .steps {
+        display: grid !important;
+
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+
+        width: 100% !important;
+
+        max-width: 100% !important;
+    }
+
+    .steps > * {
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        padding: 14px 12px !important;
+
+        background: #fffdf8 !important;
+
+        border: 1px solid #e6e3da !important;
+
+        border-radius: 7px !important;
+
+        box-shadow: none !important;
+
+        overflow: hidden !important;
+    }
+
+    .steps h3 {
+        margin: 0 0 5px !important;
+
+        font-size: 16px !important;
+
+        line-height: 1.25 !important;
+
+        word-break: normal !important;
+
+        overflow-wrap: break-word !important;
+    }
+
+    .steps p {
+        margin: 0 !important;
+
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        font-size: 10px !important;
+
+        line-height: 1.55 !important;
+
+        word-break: normal !important;
+
+        overflow-wrap: break-word !important;
+    }
+}
+@media screen and (max-width: 600px) {
+
+    .side-layout {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+        width: 100% !important;
+    }
+
+    .side-layout .checklist {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 12px !important;
+
+        margin: 0 !important;
+        padding: 0 !important;
+        list-style: none !important;
+    }
+
+    /* Remove boxes */
+    .side-layout .checklist li {
+        position: relative !important;
+
+        width: 100% !important;
+
+        padding: 4px 0 4px 38px !important;
+        margin: 0 !important;
+
+        background: transparent !important;
+
+        border: none !important;
+        border-radius: 0 !important;
+
+        box-shadow: none !important;
+
+        color: var(--muted) !important;
+
+        font-size: 11px !important;
+        line-height: 1.55 !important;
+    }
+
+    /* Keep the check circle */
+    .side-layout .checklist li::before {
+        content: "✓" !important;
+
+        position: absolute !important;
+
+        left: 0 !important;
+        top: 4px !important;
+
+        width: 26px !important;
+        height: 26px !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        border-radius: 50% !important;
+
+        background: #eef1eb !important;
+
+        color: var(--green) !important;
+
+        font-size: 10px !important;
+        font-weight: 700 !important;
+
+        line-height: 1 !important;
+    }
+
+    .side-layout .checklist li strong,
+    .side-layout .checklist li b {
+        color: var(--ink) !important;
+        font-weight: 700 !important;
     }
 }
