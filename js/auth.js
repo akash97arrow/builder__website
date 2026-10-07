@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			event.preventDefault();
 			if (!login.checkValidity()) return login.reportValidity();
 			document.querySelector('#loginNotice').textContent =
-				'Demo login submitted. Connect this form to the real resident portal before launch.';
+				'This is a demo login form only. Connect it to the real resident portal before launch.';
 			document.querySelector('#loginNotice').style.display = 'block';
 		});
 	}
@@ -19,9 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		register.addEventListener('submit', (event) => {
 			confirm.setCustomValidity(password.value === confirm.value ? '' : 'Passwords do not match.');
 			event.preventDefault();
-			if (!register.checkValidity()) return register.reportValidity();
+			if (!register.checkValidity()) {
+				register.reportValidity();
+				return;
+			}
 			document.querySelector('#registerNotice').textContent =
-				'Demo account request submitted. Connect this form to the real account service before launch.';
+				'This is a demo registration form only. Connect it to the real account service before launch.';
 			document.querySelector('#registerNotice').style.display = 'block';
 			register.reset();
 		});
