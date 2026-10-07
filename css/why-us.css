@@ -1,3 +1,14 @@
+.whyus-bg {
+	background-image:
+		linear-gradient(90deg, rgba(28, 43, 35, 0.78), rgba(28, 43, 35, 0.24) 55%, rgba(28, 43, 35, 0.02)),
+		url('../images/whyus/whyusbg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-color: #f0f0f0;
+}
+
 .why-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
