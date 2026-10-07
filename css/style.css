@@ -1,11 +1,11 @@
 :root {
 	--ink: #26332b;
 	--green: #526451;
-	--deep: #314538;
-	--gold: #b38a52;
+	--deep: #2a3d34;
+	--gold: #a77e49;
 	--cream: #f7f4ec;
 	--paper: #fffdf8;
-	--muted: #6f776f;
+	--muted: #59635b;
 	--line: #dedfd6;
 	--clay: #a9674d;
 	--shadow: 0 18px 45px rgba(40, 54, 45, 0.1);
@@ -60,7 +60,7 @@ button {
 }
 
 .section-soft {
-	background: #f0eee6;
+	background: #ede5da;
 }
 
 .eyebrow {

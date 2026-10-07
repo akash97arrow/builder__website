@@ -24,10 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		event.preventDefault();
 		if (!form.checkValidity()) {
 			form.reportValidity();
+			notice.textContent = 'Please complete the required fields before submitting this demo form.';
+			notice.style.display = 'block';
 			return;
 		}
 		notice.textContent =
-			'Thank you. Your enquiry has been recorded for this website demo. The builder can connect this form to email or CRM later.';
+			'This is a demo form only. Connect it to the real enquiry workflow before launch.';
 		notice.style.display = 'block';
 		form.reset();
 	});

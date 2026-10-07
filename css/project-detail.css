@@ -1,11 +1,30 @@
 .project-detail-hero {
     min-height: 440px;
     background: #405248;
-    position: relative
+    position: relative;
+    overflow: hidden;
+}
+
+.project-detail-hero .hero-image {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.project-detail-hero .hero-overlay {
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(90deg, rgba(247, 244, 236, 0.96) 0%, rgba(247, 244, 236, 0.9) 30%, rgba(247, 244, 236, 0.7) 55%, rgba(247, 244, 236, 0.18) 75%, rgba(247, 244, 236, 0) 100%);
 }
 
 .project-detail-hero .hero-image img {
     filter: saturate(.75)
+}
+
+.project-detail-hero .hero-inner {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 52px;
 }
 
 .detail-section {

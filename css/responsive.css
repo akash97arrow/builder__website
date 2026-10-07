@@ -507,6 +507,10 @@ img {
         margin: 18px 0 24px;
     }
 
+    .hero-overlay {
+        background: linear-gradient(180deg, rgba(247, 244, 236, 0.86) 0%, rgba(247, 244, 236, 0.7) 30%, rgba(247, 244, 236, 0.25) 70%, rgba(247, 244, 236, 0) 100%);
+    }
+
     .hero-actions {
         display: grid;
 
@@ -521,6 +525,25 @@ img {
         width: 100%;
 
         min-height: 46px;
+    }
+
+    @media (max-width: 390px) {
+        .hero {
+            min-height: 500px;
+        }
+
+        .hero-inner {
+            padding: 46px 0 42px;
+        }
+
+        .hero-inner h1 {
+            font-size: 36px;
+            letter-spacing: -1px;
+        }
+
+        .hero-inner .lead {
+            margin-bottom: 20px;
+        }
     }
 
 
