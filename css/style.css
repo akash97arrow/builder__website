@@ -282,49 +282,7 @@ p {
 	color: var(--deep);
 }
 
-/* .hero {
-	min-height: 650px;
-	display: grid;
-	align-items: center;
-	background: #e5e2d7;
-}
 
-.hero-image {
-	position: absolute;
-	inset: 0;
-	z-index: 0;
-}
-
-.hero-image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.hero-overlay {
-	position: absolute;
-	inset: 0;
-	background: linear-gradient(90deg, rgba(28, 43, 35, 0.78), rgba(28, 43, 35, 0.24) 55%, rgba(28, 43, 35, 0.02));
-}
-
-.hero-inner {
-	position: relative;
-	z-index: 1;
-	color: #fff;
-	padding: 90px 0;
-}
-
-.hero-inner .lead {
-	color: #eee;
-	max-width: 580px;
-	margin: 22px 0 28px;
-}
-
-.hero-actions {
-	display: flex;
-	gap: 12px;
-	flex-wrap: wrap;
-} */
 
 /* =========================================
    HERO SECTION
@@ -556,7 +514,7 @@ p {
 }
 
 .project-link {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 700;
 	color: var(--deep);
 }
@@ -1081,4 +1039,29 @@ p {
 	gap: 12px;
 	flex-wrap: wrap;
 	margin-top: 26px;
+}
+
+
+/* =========================================================
+   LIGHT IMAGE HERO - MATCH REFERENCE STYLE
+========================================================= */
+
+.page-hero {
+    color: #263b4d;
+}
+
+.page-hero .breadcrumb {
+    color: #465969;
+}
+
+.page-hero .eyebrow {
+    color: var(--gold);
+}
+
+.page-hero h1 {
+    color: #263b4d;
+}
+
+.page-hero .lead {
+    color: #465969;
 }

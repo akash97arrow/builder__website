@@ -1460,3 +1460,31 @@ img {
         font-weight: 700 !important;
     }
 }
+
+/* =========================================================
+   PAGE HERO - LIGHT IMAGE STYLE ON MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+    .page-hero {
+        padding: 70px 0 60px;
+        min-height: 520px;
+        background-position: center;
+    }
+
+    .page-hero h1 {
+        color: #263b4d;
+        font-size: 42px;
+        line-height: 1;
+    }
+
+    .page-hero .lead {
+        color: #465969;
+        font-size: 13px;
+        line-height: 1.65;
+    }
+
+    .page-hero .breadcrumb {
+        color: #465969;
+    }
+}
