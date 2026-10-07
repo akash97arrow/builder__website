@@ -1,16 +1,27 @@
+.amenities-bg {
+	background-image:
+		linear-gradient(90deg, rgba(28, 43, 35, 0.78), rgba(28, 43, 35, 0.24) 55%, rgba(28, 43, 35, 0.02)),
+		url('../images/amenities/amenitybg.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	background-color: #f0f0f0;
+}
+
 .amenity-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 16px;
 }
 
 .amenity-grid .feature {
-    min-height: 170px
+	min-height: 170px;
 }
 
 .amenity-hero img {
-    height: 480px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px
+	height: 480px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 12px;
 }

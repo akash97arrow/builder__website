@@ -1,15 +1,26 @@
+.about-bg {
+	background-image:
+		linear-gradient(90deg, rgba(28, 43, 35, 0.78), rgba(28, 43, 35, 0.24) 55%, rgba(28, 43, 35, 0.02)),
+		url('../images/about/aboutbg.png');
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+	background-attachment: scroll;
+	background-color: #f0f0f0;
+}
+
 .about-values {
-    margin-top: 45px
+	margin-top: 45px;
 }
 
 .about-values .feature {
-    min-height: 180px
+	min-height: 180px;
 }
 
 .about-story {
-    background: #ebe9df
+	background: #ebe9df;
 }
 
 .about-story .split img {
-    height: 430px
+	height: 430px;
 }
