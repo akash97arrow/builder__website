@@ -1496,7 +1496,6 @@ img {
 @media (max-width: 600px) {
 	.hero .hero-image,
 	.page-hero {
-		padding: 60px 0 60px;
 		min-height: 520px;
 		background-position: left;
 	}
