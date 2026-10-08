@@ -97,8 +97,11 @@ p {
 }
 
 .lead {
+	color: #162822;
+	font-weight: 700;
+	max-width: 415px;
+
 	font-size: 16px;
-	color: var(--muted);
 	max-width: 650px;
 }
 
@@ -282,168 +285,155 @@ p {
 	color: var(--deep);
 }
 
-
-
 /* =========================================
    HERO SECTION
 ========================================= */
 
 .hero {
-    position: relative;
-    min-height: 650px;
+	position: relative;
+	min-height: 650px;
 
-    display: grid;
-    align-items: center;
+	display: grid;
+	align-items: center;
 
-    background: var(--cream);
+	background: var(--cream);
 
-    overflow: hidden;
+	overflow: hidden;
 
-    border-radius: 0;
+	border-radius: 0;
 }
-
 
 /* =========================================
    HERO IMAGE
 ========================================= */
 
 .hero-image {
-    position: absolute;
-    inset: 0;
+	position: absolute;
+	inset: 0;
 
-    z-index: 0;
+	z-index: 0;
 
-    overflow: hidden;
+	overflow: hidden;
 }
 
 .hero-image img {
-    width: 100%;
-    height: 100%;
+	width: 100%;
+	height: 100%;
 
-    object-fit: cover;
+	object-fit: cover;
 
-    object-position: center right;
+	object-position: center right;
 }
-
 
 /* =========================================
    LIGHT GRADIENT OVER IMAGE
 ========================================= */
 
 .hero-overlay {
-    position: absolute;
-    inset: 0;
+	position: absolute;
+	inset: 0;
 
-    z-index: 1;
+	z-index: 1;
 
-    background:
-        linear-gradient(
-            90deg,
-            rgba(247, 244, 236, 0.92) 0%,
-            rgba(247, 244, 236, 0.88) 22%,
-            rgba(247, 244, 236, 0.80) 34%,
-            rgba(247, 244, 236, 0.58) 48%,
-            rgba(247, 244, 236, 0.18) 68%,
-            rgba(247, 244, 236, 0) 100%
-        );
+	background: linear-gradient(
+		90deg,
+		rgba(247, 244, 236, 0.92) 0%,
+		rgba(247, 244, 236, 0.88) 22%,
+		rgba(247, 244, 236, 0.8) 34%,
+		rgba(247, 244, 236, 0.58) 48%,
+		rgba(247, 244, 236, 0.18) 68%,
+		rgba(247, 244, 236, 0) 100%
+	);
 }
-
 
 /* =========================================
    HERO CONTENT
 ========================================= */
 
 .hero-inner {
-    position: relative;
+	position: relative;
+	margin-bottom: 170px;
+	z-index: 2;
 
-    z-index: 2;
+	color: var(--ink);
 
-    color: var(--ink);
+	padding: 90px;
 
-    padding: 90px;
-
-    width: 100%;
+	width: 100%;
 }
-
 
 /* =========================================
    HERO HEADING
 ========================================= */
 
 .hero-inner h1 {
-    max-width: 570px;
+	max-width: 570px;
 
-    color: #263b4d;
+	color: #263b4d;
 
-    font-size: clamp(46px, 5vw, 70px);
+	font-size: clamp(46px, 5vw, 70px);
 
-    line-height: 0.98;
+	line-height: 0.98;
 
-    letter-spacing: -1.5px;
+	letter-spacing: -1.5px;
 }
-
 
 /* =========================================
    HERO DESCRIPTION
 ========================================= */
 
 .hero-inner .lead {
-    color: #68746f;
+	color: #162822;
 
-    max-width: 470px;
+	margin: 22px 0 28px;
 
-    margin: 22px 0 28px;
+	font-size: 16px;
 
-    font-size: 14px;
-
-    line-height: 1.65;
+	line-height: 1.65;
 }
-
 
 /* =========================================
    HERO BUTTONS
 ========================================= */
 
 .hero-actions {
-    display: flex;
+	display: flex;
 
-    gap: 12px;
+	gap: 12px;
 
-    flex-wrap: wrap;
+	flex-wrap: wrap;
 }
-
 
 /* Primary button */
 
 .hero-actions .btn-primary {
-    background: #687751;
+	background: #687751;
 
-    color: #fff;
+	color: #fff;
 
-    border: 1px solid #687751;
+	border: 1px solid #687751;
 }
 
 .hero-actions .btn-primary:hover {
-    background: #53623f;
+	background: #53623f;
 
-    transform: translateY(-2px);
+	transform: translateY(-2px);
 }
-
 
 /* Secondary button */
 
 .hero-actions .btn-outline {
-    background: rgba(255, 255, 255, 0.75);
+	background: rgba(255, 255, 255, 0.75);
 
-    color: #4c584f;
+	color: #4c584f;
 
-    border-color: #4c584f;
+	border-color: #4c584f;
 }
 
 .hero-actions .btn-outline:hover {
-    background: #fff;
+	background: #fff;
 
-    border-color: var(--green);
+	border-color: var(--green);
 }
 
 .stats {
@@ -609,12 +599,15 @@ p {
 }
 
 .page-hero .lead {
-	color: #d6ddd5;
+	color: #797764c7;
 	margin-top: 15px;
 }
 
 .breadcrumb {
-	font-size: 9px;
+	font-size: 11px;
+	font-weight: bold;
+	font-style: italic;
+	/* color: #b0b3b5; */
 	color: #bfc9c0;
 	margin-bottom: 20px;
 }
@@ -844,7 +837,9 @@ p {
 }
 
 .step-num {
-	font: 600 34px/1 'Playfair Display', serif;
+	font:
+		600 34px/1 'Playfair Display',
+		serif;
 	color: var(--gold);
 	margin-bottom: 16px;
 }
@@ -1024,16 +1019,6 @@ p {
 	color: #8a6430;
 }
 
-.placeholder-note {
-	margin-top: 26px;
-	padding: 12px 16px;
-	border-left: 3px solid var(--gold);
-	background: #f4f1e8;
-	font-size: 11px;
-	color: var(--muted);
-	border-radius: 0 6px 6px 0;
-}
-
 .cta-row {
 	display: flex;
 	gap: 12px;
@@ -1041,27 +1026,26 @@ p {
 	margin-top: 26px;
 }
 
-
 /* =========================================================
    LIGHT IMAGE HERO - MATCH REFERENCE STYLE
 ========================================================= */
 
 .page-hero {
-    color: #263b4d;
+	color: #263b4d;
 }
 
 .page-hero .breadcrumb {
-    color: #465969;
+	color: #465969;
 }
 
 .page-hero .eyebrow {
-    color: var(--gold);
+	color: var(--gold);
 }
 
 .page-hero h1 {
-    color: #263b4d;
+	color: #263b4d;
 }
 
 .page-hero .lead {
-    color: #465969;
+	color: #162822;
 }

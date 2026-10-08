@@ -1,10 +1,18 @@
 .project-bg {
 	background-image:
-		linear-gradient(rgba(247, 244, 236, 0.12), rgba(247, 244, 236, 0.12)),
-		linear-gradient(90deg, rgba(247, 244, 236, 0.92) 0%, rgba(247, 244, 236, 0.82) 18%, rgba(247, 244, 236, 0.60) 34%, rgba(247, 244, 236, 0.35) 48%, rgba(247, 244, 236, 0.12) 64%, rgba(247, 244, 236, 0.02) 78%, rgba(247, 244, 236, 0) 100%),
+		linear-gradient(
+			24deg,
+			rgba(247, 244, 236, 0.98) 0%,
+			rgba(247, 244, 236, 0.9) 18%,
+			rgba(247, 244, 236, 0.68) 34%,
+			rgba(247, 244, 236, 0.42) 48%,
+			rgba(247, 244, 236, 0.16) 64%,
+			rgba(247, 244, 236, 0.03) 78%,
+			rgba(247, 244, 236, 0) 100%
+		),
 		url('../images/projects/projectbg.jpg');
 	background-repeat: no-repeat;
-	background-position: right;
+	background-position: center;
 	background-size: cover;
 	background-attachment: scroll;
 	background-color: #f0f0f0;

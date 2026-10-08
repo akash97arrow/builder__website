@@ -1,6 +1,15 @@
 .contact-bg {
 	background-image:
-		linear-gradient(90deg, rgba(247, 244, 236, 0.92) 0%, rgba(247, 244, 236, 0.82) 18%, rgba(247, 244, 236, 0.60) 34%, rgba(247, 244, 236, 0.35) 48%, rgba(247, 244, 236, 0.12) 64%, rgba(247, 244, 236, 0.02) 78%, rgba(247, 244, 236, 0) 100%),
+		linear-gradient(
+			24deg,
+			rgba(247, 244, 236, 0.98) 0%,
+			rgba(247, 244, 236, 0.9) 18%,
+			rgba(247, 244, 236, 0.68) 34%,
+			rgba(247, 244, 236, 0.42) 48%,
+			rgba(247, 244, 236, 0.16) 64%,
+			rgba(247, 244, 236, 0.03) 78%,
+			rgba(247, 244, 236, 0) 100%
+		),
 		url('../images/contact/contactbg.jpg');
 	background-repeat: no-repeat;
 	background-position: top;
@@ -52,4 +61,26 @@
 	height: 100%;
 	border: 0;
 	display: block;
+}
+
+@media (max-width: 600px) {
+	.contact-bg {
+		background-image:
+			linear-gradient(
+				24deg,
+				rgba(247, 244, 236, 0.98) 0%,
+				rgba(247, 244, 236, 0.9) 18%,
+				rgba(247, 244, 236, 0.68) 34%,
+				rgba(247, 244, 236, 0.42) 48%,
+				rgba(247, 244, 236, 0.16) 64%,
+				rgba(247, 244, 236, 0.03) 78%,
+				rgba(247, 244, 236, 0) 100%
+			),
+			url('../images/contact/contactbg.jpg');
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: cover;
+		background-attachment: scroll;
+		background-color: #f0f0f0;
+	}
 }

@@ -1,45 +1,56 @@
 .testimonial-bg {
 	background-image:
-		linear-gradient(90deg, rgba(247, 244, 236, 0.92) 0%, rgba(247, 244, 236, 0.82) 18%, rgba(247, 244, 236, 0.60) 34%, rgba(247, 244, 236, 0.35) 48%, rgba(247, 244, 236, 0.12) 64%, rgba(247, 244, 236, 0.02) 78%, rgba(247, 244, 236, 0) 100%),
+		linear-gradient(
+			24deg,
+			rgba(247, 244, 236, 0.98) 0%,
+			rgba(247, 244, 236, 0.9) 18%,
+			rgba(247, 244, 236, 0.68) 34%,
+			rgba(247, 244, 236, 0.42) 48%,
+			rgba(247, 244, 236, 0.16) 64%,
+			rgba(247, 244, 236, 0.03) 78%,
+			rgba(247, 244, 236, 0) 100%
+		),
 		url('../images/testimonials/testimonialbg.png');
 	background-repeat: no-repeat;
-	background-position:center;
+	background-position: center;
 	background-size: cover;
 	background-attachment: scroll;
-	background-color: #f0f0f0; 
+	background-color: #f0f0f0;
 }
 
 .testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
 }
 
 .quote {
-    font: 500 22px/1.35 'Playfair Display', serif;
-    color: var(--deep)
+	font:
+		500 22px/1.35 'Playfair Display',
+		serif;
+	color: var(--deep);
 }
 
 .person {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-top: 24px
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-top: 24px;
 }
 
 .avatar {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: #d8ded5;
-    display: grid;
-    place-items: center;
-    color: var(--deep);
-    font-weight: 700
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	background: #d8ded5;
+	display: grid;
+	place-items: center;
+	color: var(--deep);
+	font-weight: 700;
 }
 
 .stars {
-    color: var(--gold);
-    letter-spacing: 3px;
-    font-size: 11px
+	color: var(--gold);
+	letter-spacing: 3px;
+	font-size: 11px;
 }
