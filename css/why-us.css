@@ -1,31 +1,40 @@
 .whyus-bg {
 	background-image:
-		linear-gradient(90deg, rgba(247, 244, 236, 0.92) 0%, rgba(247, 244, 236, 0.82) 18%, rgba(247, 244, 236, 0.60) 34%, rgba(247, 244, 236, 0.35) 48%, rgba(247, 244, 236, 0.12) 64%, rgba(247, 244, 236, 0.02) 78%, rgba(247, 244, 236, 0) 100%),
+		linear-gradient(
+			24deg,
+			rgba(247, 244, 236, 0.98) 0%,
+			rgba(247, 244, 236, 0.9) 18%,
+			rgba(247, 244, 236, 0.68) 34%,
+			rgba(247, 244, 236, 0.42) 48%,
+			rgba(247, 244, 236, 0.16) 64%,
+			rgba(247, 244, 236, 0.03) 78%,
+			rgba(247, 244, 236, 0) 100%
+		),
 		url('../images/whyus/whyusbg.jpg');
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: top;
 	background-size: cover;
 	background-attachment: scroll;
 	background-color: #f0f0f0;
 }
 
 .why-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 18px
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 18px;
 }
 
 .why-number {
-    font-size: 12px;
-    color: var(--gold);
-    font-weight: 700
+	font-size: 12px;
+	color: var(--gold);
+	font-weight: 700;
 }
 
 .promise {
-    background: var(--deep);
-    color: #fff
+	background: var(--deep);
+	color: #fff;
 }
 
 .promise p {
-    color: #cbd4cb
+	color: #cbd4cb;
 }
