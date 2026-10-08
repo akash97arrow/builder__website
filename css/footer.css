@@ -1,6 +1,8 @@
 .footer .logo-mark {
     border-color: #778a79;
-    color: #d6c18f
+    color: #d6c18f;
+    position: relative;
+    top: -8px;
 }
 
 .footer .logo:hover .logo-mark {
