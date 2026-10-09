@@ -1,13 +1,12 @@
 .contact-bg {
 	background-image:
 		linear-gradient(
-			24deg,
-			rgba(247, 244, 236, 0.98) 0%,
-			rgba(247, 244, 236, 0.9) 18%,
-			rgba(247, 244, 236, 0.68) 34%,
-			rgba(247, 244, 236, 0.42) 48%,
-			rgba(247, 244, 236, 0.16) 64%,
-			rgba(247, 244, 236, 0.03) 78%,
+			90deg,
+			rgba(247, 244, 236, 0.92) 0%,
+			rgba(247, 244, 236, 0.88) 22%,
+			rgba(247, 244, 236, 0.8) 34%,
+			rgba(247, 244, 236, 0.58) 48%,
+			rgba(247, 244, 236, 0.18) 68%,
 			rgba(247, 244, 236, 0) 100%
 		),
 		url('../images/contact/contactbg.jpg');
@@ -67,15 +66,14 @@
 	.contact-bg {
 		background-image:
 			linear-gradient(
-				24deg,
-				rgba(247, 244, 236, 0.98) 0%,
-				rgba(247, 244, 236, 0.9) 18%,
-				rgba(247, 244, 236, 0.68) 34%,
-				rgba(247, 244, 236, 0.42) 48%,
-				rgba(247, 244, 236, 0.16) 64%,
-				rgba(247, 244, 236, 0.03) 78%,
-				rgba(247, 244, 236, 0) 100%
-			),
+			90deg,
+			rgba(247, 244, 236, 0.92) 0%,
+			rgba(247, 244, 236, 0.88) 22%,
+			rgba(247, 244, 236, 0.8) 34%,
+			rgba(247, 244, 236, 0.58) 48%,
+			rgba(247, 244, 236, 0.18) 68%,
+			rgba(247, 244, 236, 0) 100%
+		),
 			url('../images/contact/contactbg.jpg');
 		background-repeat: no-repeat;
 		background-position: left;

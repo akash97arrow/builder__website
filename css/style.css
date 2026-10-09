@@ -540,6 +540,11 @@ p {
 	color: #fff;
 }
 
+.banner .btn {
+	white-space: nowrap;
+	flex-shrink: 0;
+}
+
 .banner p {
 	color: #cbd2c9;
 	font-size: 12px;
@@ -915,6 +920,7 @@ p {
 }
 
 .faq-item {
+	box-sizing: border-box;
 	background: var(--paper);
 	border: 1px solid var(--line);
 	border-radius: 10px;
@@ -954,6 +960,26 @@ p {
 
 .faq-item[open] summary:after {
 	content: '–';
+}
+
+/* flips the icon back to + as soon as the item starts closing */
+.faq-item.is-closing summary:after {
+	content: '+';
+}
+
+.faq-item[open] p {
+	animation: faq-fade 0.4s ease;
+}
+
+@keyframes faq-fade {
+	from {
+		opacity: 0;
+		transform: translateY(-4px);
+	}
+	to {
+		opacity: 1;
+		transform: none;
+	}
 }
 
 .faq-item p {
