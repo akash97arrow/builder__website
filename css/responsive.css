@@ -1298,6 +1298,7 @@ img {
 @media (max-width: 380px) {
 	.container {
 		width: calc(100% - 24px);
+		background: transparent;
 	}
 
 	h1,
@@ -1543,5 +1544,42 @@ img {
 @media (max-width: 600px) {
 	.hero.project-detail-hero {
 		height: 500px;
+	}
+}
+
+/* =========================================================
+   HOME - SELECTED HOMES (tablet): 2 cards on top, 3rd card
+   on the next row with the same size as the others
+========================================================= */
+@media (min-width: 761px) and (max-width: 1199px) {
+	.grid-3:has(> .image-card) {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		gap: 20px;
+	}
+
+	.grid-3:has(> .image-card) .image-card img {
+		height: 260px;
+	}
+}
+
+/* =========================================================
+   SECTION HEAD WITH PARAGRAPH (tablet): keep the paragraph
+   close to the heading and vertically centred beside it
+========================================================= */
+@media (min-width: 761px) and (max-width: 1199px) {
+	.section-head:has(> p) {
+		justify-content: flex-start;
+		align-items: center;
+		gap: 48px;
+	}
+
+	.section-head:has(> p) > div {
+		flex: 0 0 auto;
+	}
+
+	.section-head:has(> p) > p {
+		flex: 1 1 0;
+		min-width: 0;
+		max-width: 430px;
 	}
 }
