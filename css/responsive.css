@@ -350,7 +350,7 @@ img {
 	}
 
 	.project-detail-hero {
-		min-height: 380px;
+		min-height: 560px;
 	}
 
 	.project-switcher .container {
@@ -1153,7 +1153,7 @@ img {
 	.project-detail-hero {
 		width: 100%;
 
-		min-height: 330px;
+		min-height: 560px;
 	}
 
 	.project-pagination {
@@ -1517,5 +1517,31 @@ img {
 
 	.page-hero .breadcrumb {
 		color: #21201bc7;
+	}
+}
+
+/* Banner heading: let the heading wrap naturally on smaller screens */
+@media (max-width: 900px) {
+	.banner-break {
+		display: none;
+	}
+}
+
+/* Project pages: same fixed hero height on tablets and phones as on desktop */
+@media (max-width: 760px) {
+	.hero.project-detail-hero {
+		height: 640px;
+		min-height: 0;
+	}
+
+	.hero.project-detail-hero .hero-inner {
+		margin-bottom: 40px;
+	}
+}
+
+/* Project pages: shorter hero on phones so there is less empty space under the nav bar */
+@media (max-width: 600px) {
+	.hero.project-detail-hero {
+		height: 500px;
 	}
 }
