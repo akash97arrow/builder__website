@@ -181,7 +181,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	gap: 40px;
-	align-items: end;
+	align-items: center;
 	margin-bottom: 38px;
 }
 
